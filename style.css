@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    /*variables*/
+    --color-button-hover:#02799D;
+    --color-button-bg:#E1E1E6;
+    --color-icon-outline:#323238;
+    --color-font:#323238;
+}
+
+#app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    height: 100vh;
+}
+
+section span{
+    color: var(--color-font);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 12.6rem;
+    font-weight: 500;
+}
+
+.songs button{
+    background-color: var(--color-button-bg);
+    width: 13.8rem;
+    height: 15.2rem;
+    padding: 2.0rem;
+    border: none;
+    border-radius: 2.4rem;
+}
+
+button:hover{
+    cursor: pointer;
+    transition: 2s;
+    transform: scale(1.05);
+}
+
+.actions .ph{
+    margin-right: 2rem;
+}
+
+.actions .ph:hover{
+    color: var(--color-button-hover);
+    cursor: pointer;
+    transition: 2s;
+}
+
+.ph{
+    font-size: 4.8rem;
+}
+
+button{
+    margin-bottom: 3.2rem;
+    margin-right: 3.2rem;
+}
+
+.songs{
+    display: grid;
+    grid-template-areas: "button button"
+               "button button";
+               justify-content: center;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 19.2rem;
+}
+
+.inv{
+    background-color: var(--color-button-hover);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* controls */
+.running .ph-play-circle,
+.running .ph-plus-circle,
+.running .ph-minus-circle,
+
+html:not(.running) .ph-stop-circle
+{
+    display: none;
+}
